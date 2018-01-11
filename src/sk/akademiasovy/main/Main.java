@@ -24,7 +24,10 @@ public class Main
         Triangle triangle1 = new Triangle();
         System.out.println("Area of triangle: "+triangle1.getAreaOfTriangle());
         System.out.println("Perimeter of triangle: "+triangle1.getPerimeterOfTriangle());
-        System.out.println("Is Triangle RectAngle?: "+triangle1.isRectangular());
+        System.out.println("Is Triangle RectAngle: "+triangle1.isRectangular());
+        System.out.println("Is Triangle Equilateral: "+triangle1.isEquilateralTriangle());
+        System.out.println("Is Triangle Isosceles: "+triangle1.isIsoscelesTriangle());
+        System.out.println("Is triangle exist: "+triangle1.existTriangle());
 
 
 

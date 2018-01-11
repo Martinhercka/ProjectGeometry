@@ -6,8 +6,8 @@ public class Triangle {
 
     public Triangle()
     {
-        a=3;
-        b=4;
+        a=6;
+        b=7;
         c=5;
     }
 
@@ -54,18 +54,31 @@ public double getPerimeterOfTriangle()
 
     public boolean existTriangle()
     {
-
-
-    }
-
-    public boolean isRovnoStranny()
-    {
-
+        if (a+b>c || b+c>a || a+c>b)
+            return true;
+        else
+            return false;
 
     }
 
-    public  boolean isRovnoramenny()
+    public boolean isEquilateralTriangle()
     {
+        if (a == b && b ==c && a==c )
+            return true;
+        else
+
+
+        return false;
+    }
+
+   public  boolean isIsoscelesTriangle()    //rovnoramenny
+    {
+        if (a == b || b == c || a == c)
+        return true;
+        else
+            return false;
+
+
 
 
     }
