@@ -1,6 +1,7 @@
-package sk.akademiasovy.geometry;
+package sk.akademiasovy.geometry2D;
 
-public class Triangle {
+public class Triangle implements Operation
+{
 
     private double a,b,c,s;
 
@@ -18,19 +19,19 @@ public class Triangle {
         this.c = c;
     }
 
-
-public double getPerimeterOfTriangle()
+    @Override
+public double getPerimeter()
     {
         return a+b+c;
 
 
     }
 
-
-    public double getAreaOfTriangle()
+    @Override
+    public double getArea()
     {
 
-        s=getPerimeterOfTriangle()/2;
+        s=getPerimeter()/2;
 
         return Math.sqrt(s*(s-a)*(s-b)*(s-c));
 

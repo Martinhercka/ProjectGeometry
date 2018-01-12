@@ -1,9 +1,9 @@
 package sk.akademiasovy.main;
 
-import org.w3c.dom.css.Rect;
-import sk.akademiasovy.geometry.Square;
-import sk.akademiasovy.geometry.Rectangle;
-import sk.akademiasovy.geometry.Triangle;
+import sk.akademiasovy.geometry2D.Square;
+import sk.akademiasovy.geometry2D.Rectangle;
+import sk.akademiasovy.geometry2D.Triangle;
+import sk.akademiasovy.geometry2D.Circle;
 
 public class Main
 {
@@ -18,16 +18,19 @@ public class Main
 
         Rectangle rectangle1 = new Rectangle(7.5,8.5);
 
-        System.out.println("Area of rectangle is: "+rectangle1.getAreaofRectangle());
-        System.out.println("Perimeter of rectangle is: "+rectangle1.getPerimeterOfRectangle());
+        System.out.println("Area of rectangle is: "+rectangle1.getArea());
+        System.out.println("Perimeter of rectangle is: "+rectangle1.getPerimeter());
 
         Triangle triangle1 = new Triangle();
-        System.out.println("Area of triangle: "+triangle1.getAreaOfTriangle());
-        System.out.println("Perimeter of triangle: "+triangle1.getPerimeterOfTriangle());
+        System.out.println("Area of triangle: "+triangle1.getArea());
+        System.out.println("Perimeter of triangle: "+triangle1.getPerimeter());
         System.out.println("Is Triangle RectAngle: "+triangle1.isRectangular());
         System.out.println("Is Triangle Equilateral: "+triangle1.isEquilateralTriangle());
         System.out.println("Is Triangle Isosceles: "+triangle1.isIsoscelesTriangle());
         System.out.println("Is triangle exist: "+triangle1.existTriangle());
+
+        Circle circle1 = new Circle(4);
+        System.out.println("Area of circle is: "+circle1.getArea());
 
 
 
